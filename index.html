@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="loginPage" class="login-container">
+        <div class="login-box">
+            <h2>Portfolio Login</h2>
+            <div id="errorMessage" class="error-message"></div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <div class="demo-credentials">
+                <p><strong>Demo Credentials:</strong></p>
+                <p>Username: <strong>admin</strong></p>
+                <p>Password: <strong>password123</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Content -->
+    <div id="portfolioContent" class="portfolio">
+        <header>
+            <nav>
+                <div class="logo">MyPortfolio</div>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                    <button class="logout-btn" onclick="logout()">Logout</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Full Stack Developer | Creative Problem Solver | Tech Enthusiast</p>
+            </section>
+
+            <!-- About Section -->
+            <section id="about">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <h3>Hello! I'm a passionate developer</h3>
+                    <p style="margin: 20px 0;">I'm a dedicated full-stack developer with a passion for creating innovative web solutions. With experience in modern web technologies and a keen eye for design, I transform ideas into engaging digital experiences.</p>
+                    <p style="margin-bottom: 30px;">My journey in web development began with a curiosity about how websites work, and has evolved into a career focused on building scalable, user-friendly applications that make a difference.</p>
+                    
+                    <h4 style="margin-bottom: 20px;">My Skills</h4>
+                    <div class="skills">
+                        <div class="skill-card">HTML5 & CSS3</div>
+                        <div class="skill-card">JavaScript</div>
+                        <div class="skill-card">React</div>
+                        <div class="skill-card">Node.js</div>
+                        <div class="skill-card">Python</div>
+                        <div class="skill-card">SQL & NoSQL</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">01</div>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A fully functional online shopping platform with user authentication, product management, and secure payment integration. Built with React and Node.js.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">02</div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>An intuitive task management application featuring real-time collaboration, drag-and-drop functionality, and progress tracking. Perfect for team productivity.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">03</div>
+                        <div class="project-content">
+                            <h3>Weather Dashboard</h3>
+                            <p>A responsive weather application that provides real-time weather data, forecasts, and interactive maps. Integrates with multiple weather APIs for accuracy.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-form">
+                    <div id="successMessage" class="success-message"></div>
+                    <form id="contactForm">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
